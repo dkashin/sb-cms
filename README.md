@@ -5,8 +5,9 @@ Solution for building own broadcast head-end CMS.
 Features:
 - User: Auth sessions, User profiles management
 - Channels: Channel metadata management, streaming colocations
-- Streaming: Stream URLs, auth sessions, exernal streaming servers integrarion
-- DVR: Timeshift/catchupTV URLs generation, auth sessions
+- Streaming: Stream URLs and auth tokens generation
+- Nimble/Flussonic streaming servers integration
+- DVR: Timeshift/catchupTV URLs and auth tokens generation
 - Reports: statistics and tokens analysis module
 - GeoService: content protection based on geo location
 - DB: MongoDB
