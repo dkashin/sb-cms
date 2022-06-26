@@ -1,4 +1,4 @@
-# StreamBox CMS
+## StreamBox CMS
 
 Solution for building own broadcast head-end CMS.
 
