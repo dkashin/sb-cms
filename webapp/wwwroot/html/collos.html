@@ -1,0 +1,57 @@
+
+<div class="row">
+  <div class="col-md-12">
+    <table ng-table="tableParams" class="table table-hover" show-filter="true">
+      <tbody>
+        <tr ng-repeat="Col in $data track by $index">
+          <td title="'Title'" filter="{ title: 'text'}" sortable="'title'">
+            {{ Col.title }}
+          </td>
+          <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
+            {{ Col.name }}
+          </td>
+          <td title="'Public'" filter="{ public: 'text'}" sortable="'public'">
+            {{ Col.public ? 'Yes' : 'No' }}
+          </td>
+          <td title="'Active'" filter="{ enabled: 'text'}" sortable="'enabled'">
+            {{ Col.enabled ? 'Yes' : 'No' }}
+          </td>
+          <td title="'MySQL ID'" filter="{ colo_id: 'text'}" sortable="'colo_id'">
+            {{ Col.colo_id }}
+          </td>
+          <td title="'Mongo ID'" filter="{ _id: 'text'}" sortable="'_id'">
+            {{ Col._id }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <a id="modal-104113" href="#modal-container-104113" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+
+    <div class="modal fade" id="modal-container-104113" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel">
+              Modal title
+            </h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">
+              Save changes
+            </button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

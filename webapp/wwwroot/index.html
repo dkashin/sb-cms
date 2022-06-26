@@ -1,0 +1,38 @@
+
+<!doctype html>
+
+<html lang="en" ng-app="STABox">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="STABox web app">
+    <meta name="author" content="STABox">
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/ng-table/ng-table.min.css">
+    <link rel="stylesheet" href="app/css/custom.css">
+    <title>STABox</title>
+    <base href="/">
+  </head>
+
+  <body ng-controller="AppController">
+    <div class="container-fluid">
+      <div ng-include="'html/navbar.html'"></div>
+      <div ng-view></div>
+    </div>
+  </body>
+
+  <script src="plugins/jquery/jquery-3.3.1.slim.min.js"></script>
+  <script src="plugins/angular/angular.min.js"></script>
+  <script src="plugins/angular/angular-route.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/ng-table/ng-table.min.js"></script>
+  <script src="app/js/app.js"></script>
+  <script src="app/js/config.js"></script>
+  <script src="app/js/factory.js"></script>
+  <script src="app/js/services.js"></script>
+  <script src="app/js/collos.js"></script>
+  <script src="app/js/stats.js"></script>
+
+</html>

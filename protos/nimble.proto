@@ -1,0 +1,45 @@
+syntax = "proto3";
+package stabox;
+
+/* Commented out fields currently not handled */
+message NimbleReportReq {
+    // string ID = 1;
+    // string Puzzle = 2;
+    // string Signature = 3;
+    PayPerViewInfo_ PayPerViewInfo = 4;
+    message PayPerViewInfo_ {
+        repeated VHost_ VHost = 1;
+        message VHost_ {
+            string name = 1;
+            repeated Application_ Application = 2;
+            message Application_ {
+                string name = 1;
+                repeated Instance_ Instance = 2;
+                message Instance_ {
+                    string name = 1;
+                    repeated Stream_ Stream = 2;
+                    message Stream_ {
+                        string name = 1;
+                        repeated Player_ Player = 2;
+                        message Player_ {
+                            // uint32 bytes_sent = 1;
+                            // uint32 delta = 2;
+                            string id = 3;
+                            string ip = 4;
+                            // string sessionid = 5;
+                            repeated string user_agents = 6;
+                        }
+                    }
+                }
+            }
+        }
+    };
+    string vhost = 5;
+}
+
+message NimbleReportRep {
+    DenyList_ DenyList = 1;
+    message DenyList_ {
+        repeated string ID = 1;
+    }
+}

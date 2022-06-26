@@ -1,0 +1,34 @@
+syntax = "proto3";
+package stabox;
+
+import "google/api/annotations.proto";
+import "services.proto";
+
+message Channel {
+    string _id = 1;
+    uint32 channel_id = 2;
+}
+
+message Program {
+    string _id = 1;
+    uint32 program_id = 2;
+    uint32 channel_id = 3;
+    string name = 4;
+    string description = 5;
+    uint32 starts_at = 6;
+    uint32 ends_at = 7;
+}
+
+message Stream {
+    string _id = 1;
+    uint32 stream_id = 2;
+    string name = 3;
+    oneof enabled_ { bool enabled = 4; }
+    stabox.Service service = 5;
+}
+
+service Channels {
+    rpc getAvailableStreams(Channel) returns (stream Stream) {}
+    rpc getProgram(Program) returns (Program) {}
+    rpc findProgram(Program) returns (Program) {}
+}

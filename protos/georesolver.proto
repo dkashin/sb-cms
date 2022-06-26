@@ -1,0 +1,23 @@
+syntax = "proto3";
+package stabox;
+
+import "google/api/annotations.proto";
+
+
+message GetLocationReq {
+    string ip_address = 1;
+}
+
+message GeoLocation {
+    string country = 1;
+    string city = 2;
+    bool gray = 3;
+}
+
+service GeoResolver {
+    rpc GetLocation(GetLocationReq) returns (GeoLocation) {
+        option (google.api.http) = {
+            get: "/ip_address/{ip_address}/location"
+        };
+    };
+}

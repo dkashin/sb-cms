@@ -1,0 +1,842 @@
+{
+    "ID": "67b71bc1-fbbe-2915-aa6f-f568e38f0a7b",
+    "Signature": "aEvXlHpMcNwAkg5/et2bdg==",
+    "Puzzle": "cccc754a-3bb6-b3fb-b11b-9a7079098249",
+    "PayPerViewInfo": {
+        "VHost": [{
+            "name": "95.153.32.38",
+            "Application": [{
+                    "name": "hls_nimblede",
+                    "Instance": [{
+                        "name": "_definst_",
+                        "Stream": [{
+                                "name": "kentron",
+                                "Player": [{
+                                    "id": "5b9cdcdb6793971a16e0ce15",
+                                    "ip": "83.251.129.69",
+                                    "sessionid": "191722",
+                                    "delta": 10000,
+                                    "bytes_sent": 1960898,
+                                    "user_agents": [
+                                        "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "ru_tv1000_prem_hd",
+                                "Player": [{
+                                    "id": "5b9d090e6793971a497ce739",
+                                    "ip": "37.4.250.119",
+                                    "sessionid": "192466",
+                                    "delta": 10000,
+                                    "bytes_sent": 0
+                                }]
+                            }
+                        ]
+                    }]
+                },
+                {
+                    "name": "media",
+                    "Instance": [{
+                        "name": "_definst_",
+                        "Stream": [{
+                                "name": "hls_145/teentv",
+                                "Player": [{
+                                    "id": "5b9cdd3f6793971a497ca805",
+                                    "ip": "93.134.94.119",
+                                    "sessionid": "191730",
+                                    "delta": 10000,
+                                    "bytes_sent": 1380685,
+                                    "user_agents": [
+                                        "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_147/armpublictv",
+                                "Player": [{
+                                    "id": "5b9cf1436793971a178176e5",
+                                    "ip": "185.113.96.125",
+                                    "sessionid": "192094",
+                                    "delta": 10000,
+                                    "bytes_sent": 1394336,
+                                    "user_agents": [
+                                        "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_147/multiman",
+                                "Player": [{
+                                    "id": "5b9cf6086793971a17817dcf",
+                                    "ip": "83.254.0.7",
+                                    "sessionid": "192160",
+                                    "delta": 10000,
+                                    "bytes_sent": 3394926,
+                                    "user_agents": [
+                                        "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_147_146/karus_hq",
+                                "Player": [{
+                                    "id": "5b9cd9416793971a1781550f",
+                                    "ip": "95.90.189.83",
+                                    "sessionid": "191668",
+                                    "delta": 10000,
+                                    "bytes_sent": 2470599,
+                                    "user_agents": [
+                                        "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_147_146/lrt_televizija",
+                                "Player": [{
+                                    "id": "5b9bf35b6793971a497ba8a1",
+                                    "ip": "37.5.245.97",
+                                    "sessionid": "188620",
+                                    "delta": 10000,
+                                    "bytes_sent": 6561,
+                                    "user_agents": [
+                                        "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_147_146/ntv_hd",
+                                "Player": [{
+                                    "id": "5b9cd79003a9f70001adca07",
+                                    "ip": "46.5.0.239",
+                                    "sessionid": "191638",
+                                    "delta": 10000,
+                                    "bytes_sent": 4659331,
+                                    "user_agents": [
+                                        "Mozilla/5.0 (Linux; Android 5.1.1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_147_146/tnt_hd",
+                                "Player": [{
+                                    "id": "5b9d08bb03a9f70001adeb6a",
+                                    "ip": "46.223.121.180",
+                                    "sessionid": "192460",
+                                    "delta": 10000,
+                                    "bytes_sent": 2123,
+                                    "user_agents": [
+                                        "ExoMedia 4.1.0 (41000) / Android 6.0.1 / HM8"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_148/bober",
+                                "Player": [{
+                                    "id": "5b9ca6306793971a16e08122",
+                                    "ip": "109.65.246.166",
+                                    "sessionid": "190965",
+                                    "delta": 10000,
+                                    "bytes_sent": 1395827,
+                                    "user_agents": [
+                                        "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_148/nickel_hq",
+                                "Player": [{
+                                    "id": "5b9cc12b03a9f70001adbda5",
+                                    "ip": "87.100.212.177",
+                                    "sessionid": "191318",
+                                    "delta": 10000,
+                                    "bytes_sent": 3115188,
+                                    "user_agents": [
+                                        "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:62.0) Gecko/20100101 Firefox/62.0"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_149/tv1000action",
+                                "Player": [{
+                                    "id": "5b9cfaf96793971a178184f9",
+                                    "ip": "95.223.107.140",
+                                    "sessionid": "192225",
+                                    "delta": 10000,
+                                    "bytes_sent": 731058,
+                                    "user_agents": [
+                                        "Mozilla/5.0 (Linux; Android) MXPlayer/1.8"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_150/match_premier_hd",
+                                "Player": [{
+                                        "id": "5b9ce22d6793971a178164ac",
+                                        "ip": "2.203.130.22",
+                                        "sessionid": "191852",
+                                        "delta": 10000,
+                                        "bytes_sent": 4557154,
+                                        "user_agents": [
+                                            "Mozilla/5.0 (Linux; Android 5.1.1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
+                                        ]
+                                    },
+                                    {
+                                        "id": "",
+                                        "ip": "109.71.177.122",
+                                        "sessionid": "191857",
+                                        "delta": 10000,
+                                        "bytes_sent": 12511562,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "hls_151/test_on/ictv",
+                                "Player": [{
+                                    "id": "5b9d05296793971a497ce092",
+                                    "ip": "37.230.163.6",
+                                    "sessionid": "192400",
+                                    "delta": 10000,
+                                    "bytes_sent": 1318329,
+                                    "user_agents": [
+                                        "Lavf53.32.100"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_157/men_hd",
+                                "Player": [{
+                                    "id": "5b9cbb896793971a16e097d0",
+                                    "ip": "85.194.0.23",
+                                    "sessionid": "191238",
+                                    "delta": 10000,
+                                    "bytes_sent": 4374833,
+                                    "user_agents": [
+                                        "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_183_147/kinopokaz",
+                                "Player": [{
+                                    "id": "5b9cf6ea6793971a16e0f1d1",
+                                    "ip": "95.90.217.146",
+                                    "sessionid": "192177",
+                                    "delta": 10000,
+                                    "bytes_sent": 1716230,
+                                    "user_agents": [
+                                        "Lavf53.32.100"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_183_147/test_on/dozd",
+                                "Player": [{
+                                    "id": "5b9cf62e6793971a17817dfd",
+                                    "ip": "185.17.204.4",
+                                    "sessionid": "192163",
+                                    "delta": 10000,
+                                    "bytes_sent": 1657185,
+                                    "user_agents": [
+                                        "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_183_147/zvezda",
+                                "Player": [{
+                                        "id": "5b9d08dc6793971a16e10dcc",
+                                        "ip": "95.90.197.57",
+                                        "sessionid": "192462",
+                                        "delta": 10000,
+                                        "bytes_sent": 1368917,
+                                        "user_agents": [
+                                            "Lavf53.32.100"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9d022a6793971a497cdbb0",
+                                        "ip": "87.134.138.214",
+                                        "sessionid": "192328",
+                                        "delta": 10000,
+                                        "bytes_sent": 1368917,
+                                        "user_agents": [
+                                            "DuneHD/1.0 (product_id: hdtv_101; firmware_version: 150721_0135_b9)"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "hls_183_148/1tvint",
+                                "Player": [{
+                                        "id": "5b9d08b86793971a17819aab",
+                                        "ip": "94.114.28.14",
+                                        "sessionid": "192458",
+                                        "delta": 10000,
+                                        "bytes_sent": 1550901,
+                                        "user_agents": [
+                                            "Lavf53.32.100"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9ceeb76793971a178173b3",
+                                        "ip": "109.192.193.126",
+                                        "sessionid": "192051",
+                                        "delta": 10000,
+                                        "bytes_sent": 1550901,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "hls_183_148/bak_on/ntv",
+                                "Player": [{
+                                    "id": "5ba12f297321860001db948a",
+                                    "ip": "79.173.88.34",
+                                    "sessionid": "192444",
+                                    "delta": 10000,
+                                    "bytes_sent": 1570429,
+                                    "user_agents": [
+                                        "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_183_148/bak_on/pervy",
+                                "Player": [{
+                                        "id": "5ba000f445e5f371bd3fdca2",
+                                        "ip": "37.209.42.135",
+                                        "sessionid": "191347",
+                                        "delta": 10000,
+                                        "bytes_sent": 1692322,
+                                        "user_agents": [
+                                            "Mozilla/5.0 (Linux; Android 5.1.1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9cc11903a9f70001adbd9b",
+                                        "ip": "87.100.212.177",
+                                        "sessionid": "191316",
+                                        "delta": 10000,
+                                        "bytes_sent": 1762957,
+                                        "user_agents": [
+                                            "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:62.0) Gecko/20100101 Firefox/62.0"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9cfc7b6793971a16e0fa39",
+                                        "ip": "37.5.250.158",
+                                        "sessionid": "192255",
+                                        "delta": 10000,
+                                        "bytes_sent": 1762957,
+                                        "user_agents": [
+                                            "Lavf53.32.100"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9d022903a9f70001ade536",
+                                        "ip": "83.249.64.179",
+                                        "sessionid": "192327",
+                                        "delta": 10000,
+                                        "bytes_sent": 1736314,
+                                        "user_agents": [
+                                            "Mozilla/5.0 (Linux; Android 5.1.1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9c18e36793971a497bf820",
+                                        "ip": "213.112.98.202",
+                                        "sessionid": "189230",
+                                        "delta": 10000,
+                                        "bytes_sent": 1762957,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9cd2dd6793971a17814a97",
+                                        "ip": "81.232.30.18",
+                                        "sessionid": "191565",
+                                        "delta": 10000,
+                                        "bytes_sent": 1762957,
+                                        "user_agents": [
+                                            "DuneHD/1.0 (product_id: tv102; firmware_version: 170519_1353_r11)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9cd4a76793971a16e0c055",
+                                        "ip": "84.219.244.16",
+                                        "sessionid": "191588",
+                                        "delta": 10000,
+                                        "bytes_sent": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "hls_183_148/bak_on/ros1",
+                                "Player": [{
+                                        "id": "5b9cdfb76793971a16e0d321",
+                                        "ip": "213.112.98.202",
+                                        "sessionid": "191793",
+                                        "delta": 10000,
+                                        "bytes_sent": 1563481,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9d02d303a9f70001ade657",
+                                        "ip": "81.197.194.52",
+                                        "sessionid": "192338",
+                                        "delta": 10000,
+                                        "bytes_sent": 1563481,
+                                        "user_agents": [
+                                            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9ce9c36793971a16e0e0b7",
+                                        "ip": "37.201.214.164",
+                                        "sessionid": "191951",
+                                        "delta": 10000,
+                                        "bytes_sent": 1567697,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5ba12f297321860001db9489",
+                                        "ip": "213.220.147.163",
+                                        "sessionid": "192211",
+                                        "delta": 10000,
+                                        "bytes_sent": 1563481,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9cea336793971a497cba86",
+                                        "ip": "88.130.58.16",
+                                        "sessionid": "191957",
+                                        "delta": 10000,
+                                        "bytes_sent": 1563481,
+                                        "user_agents": [
+                                            "Lavf53.32.100"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "hls_183_148/bak_on/ros24",
+                                "Player": [{
+                                    "id": "5b9cfaa703a9f70001addf43",
+                                    "ip": "77.21.251.39",
+                                    "sessionid": "192222",
+                                    "delta": 10000,
+                                    "bytes_sent": 3394126,
+                                    "user_agents": [
+                                        "samsunghas-agent/1.0"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_183_148/bak_on/rtr",
+                                "Player": [{
+                                        "id": "5b9cf02e6793971a16e0e828",
+                                        "ip": "31.17.253.27",
+                                        "sessionid": "192075",
+                                        "delta": 10000,
+                                        "bytes_sent": 1740569,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9d026c6793971a17819013",
+                                        "ip": "91.32.203.215",
+                                        "sessionid": "192332",
+                                        "delta": 10000,
+                                        "bytes_sent": 1740569,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9cfb6703a9f70001addfd9",
+                                        "ip": "95.91.206.243",
+                                        "sessionid": "192236",
+                                        "delta": 10000,
+                                        "bytes_sent": 2100,
+                                        "user_agents": [
+                                            "ExoMedia 4.1.0 (41000) / Android 6.0.1 / 45Expert"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "hls_183_148/bak_on/tnt",
+                                "Player": [{
+                                        "id": "5b9d05796793971a16e107f5",
+                                        "ip": "87.144.32.207",
+                                        "sessionid": "192411",
+                                        "delta": 10000,
+                                        "bytes_sent": 1790201,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9d01ef6793971a16e10237",
+                                        "ip": "158.181.77.38",
+                                        "sessionid": "192324",
+                                        "delta": 10000,
+                                        "bytes_sent": 3341608,
+                                        "user_agents": [
+                                            "VLC/3.0.0-git LibVLC/3.0.0-git"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "hls_183_149/bak_on/matchfoot1",
+                                "Player": [{
+                                        "id": "5b9d06ae6793971a178196fe",
+                                        "ip": "88.130.62.134",
+                                        "sessionid": "192422",
+                                        "delta": 10000,
+                                        "bytes_sent": 3276994,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9d00f46793971a497cd9e4",
+                                        "ip": "37.201.195.135",
+                                        "sessionid": "192312",
+                                        "delta": 10000,
+                                        "bytes_sent": 3276994,
+                                        "user_agents": [
+                                            "Lavf53.32.100"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9d038203a9f70001ade70c",
+                                        "ip": "213.67.8.14",
+                                        "sessionid": "192362",
+                                        "delta": 10000,
+                                        "bytes_sent": 2156,
+                                        "user_agents": [
+                                            "ExoMedia 4.1.0 (41000) / Android 6.0.1 / HM8"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "hls_183_149/bak_on/matchtv",
+                                "Player": [{
+                                        "id": "5b9ce7036793971a16e0ddbc",
+                                        "ip": "217.232.182.26",
+                                        "sessionid": "191902",
+                                        "delta": 10000,
+                                        "bytes_sent": 1555797,
+                                        "user_agents": [
+                                            "Lavf53.32.100"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9cfcfb6793971a16e0faec",
+                                        "ip": "193.111.245.167",
+                                        "sessionid": "192263",
+                                        "delta": 10000,
+                                        "bytes_sent": 1560061,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "hls_183_149/match_premier",
+                                "Player": [{
+                                    "id": "5b9ce8346793971a16e0df0b",
+                                    "ip": "88.130.48.156",
+                                    "sessionid": "191922",
+                                    "delta": 10000,
+                                    "bytes_sent": 1579909,
+                                    "user_agents": [
+                                        "DuneHD/1.0 (product_id: tv102v2; firmware_version: 170519_1353_r11)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_183_149/ntvplusfut1_hd",
+                                "Player": [{
+                                        "id": "5b9cfc436793971a16e0f9df",
+                                        "ip": "31.16.250.232",
+                                        "sessionid": "192251",
+                                        "delta": 10000,
+                                        "bytes_sent": 5513817,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9cf2876793971a1781787f",
+                                        "ip": "90.252.55.42",
+                                        "sessionid": "192116",
+                                        "delta": 10000,
+                                        "bytes_sent": 5513817,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9cf78a6793971a497ccbd7",
+                                        "ip": "31.17.255.197",
+                                        "sessionid": "192180",
+                                        "delta": 10000,
+                                        "bytes_sent": 4817089,
+                                        "user_agents": [
+                                            "DuneHD/1.0 (product_id: tv102v2; firmware_version: 170519_1353_r11)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9d092a6793971a497ce770",
+                                        "ip": "95.90.185.103",
+                                        "sessionid": "192468",
+                                        "delta": 6000,
+                                        "bytes_sent": 10892190,
+                                        "user_agents": [
+                                            "Lavf53.32.100"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "hls_183_149/ntvplusfut2_hd",
+                                "Player": [{
+                                    "id": "5b9c14696793971a1780a304",
+                                    "ip": "95.90.188.230",
+                                    "sessionid": "189165",
+                                    "delta": 10000,
+                                    "bytes_sent": 2187,
+                                    "user_agents": [
+                                        "Fire OS/5.2.6.6 stagefright/1.2 (Linux;Android 5.1.1)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_183_150/natgeowild_hd",
+                                "Player": [{
+                                    "id": "5b9d033e6793971a16e10431",
+                                    "ip": "37.201.5.225",
+                                    "sessionid": "192352",
+                                    "delta": 10000,
+                                    "bytes_sent": 4691174,
+                                    "user_agents": [
+                                        "Mozilla/5.0 (Linux; Android 5.1.1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_183_150/ros_hd",
+                                "Player": [{
+                                        "id": "5b9d07076793971a17819792",
+                                        "ip": "89.12.105.51",
+                                        "sessionid": "192426",
+                                        "delta": 10000,
+                                        "bytes_sent": 9768115,
+                                        "user_agents": [
+                                            "DuneHD/1.0 (product_id: tv102v2; firmware_version: 170519_1353_r11)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9c0f9b6793971a17809984",
+                                        "ip": "84.250.244.100",
+                                        "sessionid": "189083",
+                                        "delta": 10000,
+                                        "bytes_sent": 4680913,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9d01c06793971a16e101f2",
+                                        "ip": "37.49.126.75",
+                                        "sessionid": "192323",
+                                        "delta": 10000,
+                                        "bytes_sent": 5641781,
+                                        "user_agents": [
+                                            "Lavf53.32.100"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9ce81d6793971a16e0deec",
+                                        "ip": "91.154.222.46",
+                                        "sessionid": "191920",
+                                        "delta": 10000,
+                                        "bytes_sent": 10481798,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "hls_183_151/1tv_hd",
+                                "Player": [{
+                                    "id": "5b9d09056793971a17819b2e",
+                                    "ip": "88.113.68.242",
+                                    "sessionid": "192465",
+                                    "delta": 10000,
+                                    "bytes_sent": 0
+                                }]
+                            },
+                            {
+                                "name": "hls_183_151/1tvint_hq",
+                                "Player": [{
+                                    "id": "5b9d09166793971a497ce745",
+                                    "ip": "88.113.68.242",
+                                    "sessionid": "192467",
+                                    "delta": 10000,
+                                    "bytes_sent": 4748161,
+                                    "user_agents": [
+                                        "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_183_151/5kanal_hq",
+                                "Player": [{
+                                    "id": "5ba000f445e5f371bd3fdca1",
+                                    "ip": "176.72.79.169",
+                                    "sessionid": "192185",
+                                    "delta": 10000,
+                                    "bytes_sent": 5379766,
+                                    "user_agents": [
+                                        "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_183_151/match_hd",
+                                "Player": [{
+                                        "id": "5b9d07db6793971a16e10bc3",
+                                        "ip": "80.217.50.99",
+                                        "sessionid": "192435",
+                                        "delta": 10000,
+                                        "bytes_sent": 5054109,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "",
+                                        "ip": "91.122.60.226",
+                                        "sessionid": "192046",
+                                        "delta": 10000,
+                                        "bytes_sent": 2140,
+                                        "user_agents": [
+                                            "ExoMedia 4.1.0 (41000) / Android 6.0.1 / KM5"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "hls_183_151/matchigra_hd",
+                                "Player": [{
+                                    "id": "5b9d05a06793971a16e1082e",
+                                    "ip": "77.47.13.242",
+                                    "sessionid": "192414",
+                                    "delta": 10000,
+                                    "bytes_sent": 5789221,
+                                    "user_agents": [
+                                        "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36 WebAppManager"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_183_151/rtr_hq",
+                                "Player": [{
+                                    "id": "5b9d08866793971a497ce63d",
+                                    "ip": "92.116.37.187",
+                                    "sessionid": "192455",
+                                    "delta": 10000,
+                                    "bytes_sent": 4826049,
+                                    "user_agents": [
+                                        "samsunghas-agent/1.1"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_183_151/tvcentr_hq",
+                                "Player": [{
+                                    "id": "5b9c55336793971a497c3376",
+                                    "ip": "89.254.152.95",
+                                    "sessionid": "190059",
+                                    "delta": 10000,
+                                    "bytes_sent": 2683122,
+                                    "user_agents": [
+                                        "VLC/3.0.0-git LibVLC/3.0.0-git"
+                                    ]
+                                }]
+                            },
+                            {
+                                "name": "hls_183_152/europaplus_hq",
+                                "Player": [{
+                                        "id": "5b9cfcba6793971a497cd3ab",
+                                        "ip": "84.132.160.129",
+                                        "sessionid": "192257",
+                                        "delta": 10000,
+                                        "bytes_sent": 2336797,
+                                        "user_agents": [
+                                            "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                        ]
+                                    },
+                                    {
+                                        "id": "5b9d087703a9f70001adeb30",
+                                        "ip": "83.250.255.187",
+                                        "sessionid": "192452",
+                                        "delta": 10000,
+                                        "bytes_sent": 4744170,
+                                        "user_agents": [
+                                            "mpv 0.26.0"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "hls_183_152/matchfut3_hd",
+                                "Player": [{
+                                    "id": "5b9d08276793971a17819983",
+                                    "ip": "95.90.185.103",
+                                    "sessionid": "192442",
+                                    "delta": 10000,
+                                    "bytes_sent": 0
+                                }]
+                            },
+                            {
+                                "name": "hls_183_152/zvezda_hq",
+                                "Player": [{
+                                    "id": "5b9cf9626793971a497cce86",
+                                    "ip": "87.123.196.120",
+                                    "sessionid": "192203",
+                                    "delta": 10000,
+                                    "bytes_sent": 2396925,
+                                    "user_agents": [
+                                        "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn)"
+                                    ]
+                                }]
+                            }
+                        ]
+                    }]
+                }
+            ]
+        }]
+    }
+}

@@ -1,0 +1,110 @@
+syntax = "proto3";
+package stabox;
+
+import "services.proto";
+import "georesolver.proto";
+import "google/api/annotations.proto";
+
+
+message Account {
+    string _id = 1;
+    oneof enabled_ {bool enabled = 2; }
+
+    uint32 login = 3;
+    string password = 4;
+
+    uint32 user_id = 5;
+    uint32 account_id = 6;
+
+    uint32 rating = 7;
+    int32 tz_offset = 8;
+
+    uint32 channel_id = 9;
+    uint32 volume_level = 10;
+    string parent_code = 11;
+
+    uint32 max_streams = 12;
+    uint32 max_addresses = 13;
+
+    oneof autocolo_ { bool autocolo = 14; }
+    stabox.Colo live_colo = 15;
+    stabox.Colo dvr_colo = 16;
+
+    message ColoAbuses { repeated uint32 timestamps = 1; }
+    map<string, ColoAbuses> abuses = 17;
+
+    string ip_address = 18;
+    stabox.GeoLocation location = 19;
+    oneof trusted_ { bool trusted = 20; }
+}
+
+message GetAccountsReq {
+    uint32 skip = 2;
+    uint32 limit = 3;
+    string fields = 5;
+}
+
+message GetAccountsRep {
+    repeated Account accounts = 1;
+    uint32 offset = 2;
+    uint32 count = 3;
+    uint32 total = 4;
+}
+
+message updateAccountsReq {
+    Account query = 1;
+    Account set = 2;
+}
+
+message updateAccountsRep {
+    uint32 affected = 1;
+}
+
+message SessionCreateReq {
+    uint32 login = 1;
+    string password = 2;
+    string user_agent = 3;
+    string ip_address = 4;
+}
+
+message AccountSession {
+    string _id = 1;
+    uint32 login = 2;
+    string user_agent = 3;
+    string ip_address = 4;
+    string created_at = 5;
+    oneof active_ { bool active = 6; }
+    stabox.GeoLocation location = 7;
+}
+
+
+service Accounts {
+    rpc GetAccounts(GetAccountsReq) returns (GetAccountsRep) {
+        option (google.api.http) = {
+            get: "/accounts"
+        };
+    }
+    rpc GetAccount(Account) returns (Account) {
+        option (google.api.http) = {
+            get: "/accounts/{login}"
+        };
+    }
+    rpc updateAccount(Account) returns (Account) {
+        option (google.api.http) = {
+            patch: "/accounts/{login}",
+            body: "*"
+        };
+    }
+    // rpc updateAccounts(updateAccountsReq) returns (Account) {
+    //     option (google.api.http) = {
+    //         patch: "/accounts/{login}",
+    //         body: "*"
+    //     };
+    // }
+    rpc SessionCreate(SessionCreateReq) returns (AccountSession) {
+        option (google.api.http) = {
+            post: "/accounts/{login}/sessions",
+            body: "*"
+        };
+    }
+}

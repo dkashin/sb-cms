@@ -1,0 +1,29 @@
+
+<div class="row">
+  <div class="col-md-12">
+    <table ng-table="tableParams" class="table table-hover" show-filter="true">
+      <tbody>
+        <tr ng-repeat="Col in $data track by $index">
+          <td title="'Title'" filter="{ title: 'text'}" sortable="'title'">
+            {{ Col.title }}
+          </td>
+          <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
+            {{ Col.name }}
+          </td>
+          <td title="'Public'" filter="{ public: 'text'}" sortable="'public'">
+            {{ Col.public ? 'Yes' : 'No' }}
+          </td>
+          <td title="'Active'" filter="{ enabled: 'text'}" sortable="'enabled'">
+            {{ Col.enabled ? 'Yes' : 'No' }}
+          </td>
+          <td title="'MySQL ID'" filter="{ colo_id: 'text'}" sortable="'colo_id'">
+            {{ Col.colo_id }}
+          </td>
+          <td title="'Mongo ID'" filter="{ _id: 'text'}" sortable="'_id'">
+            {{ Col._id }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+*.pid
+*.sock
+*.py[cod]
+*.log
+*.log.*
+*.db
+*.db-*
+*.pem
+*.lock
+

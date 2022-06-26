@@ -1,0 +1,11 @@
+FROM reg.tebox.eu/python-base:dev
+
+WORKDIR /app
+
+COPY requirements.txt ./
+
+RUN pip install -r requirements.txt
+
+COPY accessresolver.py nimble_pb2.py dispenser_pb2.py tools.py ./
+
+CMD rq worker --results-ttl 0 -P /app requests

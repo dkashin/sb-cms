@@ -1,0 +1,14 @@
+syntax = "proto3";
+package stabox;
+
+message MovieFile {
+    string _id = 1;
+    uint32 file_id = 2;
+    uint32 movie_id = 3;
+    string filename = 4;
+    uint32 service_id = 5;
+}
+
+service Movies {
+    rpc getFileInfo(MovieFile) returns (MovieFile) {}
+}

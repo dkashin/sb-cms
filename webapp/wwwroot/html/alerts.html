@@ -1,0 +1,2 @@
+
+<div uib-alert ng-class="'alert-' + (Alert.type || 'warning')" class="alert-main" ng-repeat="Alert in AF.Queue track by $index" ng-show="Alert.action == 'admin'" close="AF.Close($index)" dismiss-on-timeout="3000">{{ Alert.msg }}</div>

@@ -1,0 +1,60 @@
+
+<div class="row">
+  <div class="col-md-12">
+    <table ng-table="tableParams" class="table table-hover" show-filter="true">
+      <tbody>
+        <tr ng-repeat="Srv in $data track by $index">
+          <td title="'Collocation'" filter="{ colo_name: 'text'}" sortable="'colo_name'">
+            {{ Srv.colo_name }}
+          </td>
+          <td title="'URL'" filter="{ address: 'text'}" sortable="'address'">
+            {{ Srv.address }}
+          </td>
+          <td title="'Handler'" filter="{ handler: 'text'}" sortable="'handler'">
+            {{ Srv.handler }}
+          </td>
+          <td title="'Active'" filter="{ enabled: 'text'}" sortable="'enabled'">
+            {{ Srv.enabled ? 'Yes' : 'No' }}
+          </td>
+          <td title="'Priority'" filter="{ priority: 'text'}" sortable="'priority'">
+            {{ Srv.priority }}
+          </td>
+          <td title="'MySQL ID'" filter="{ service_id: 'text'}" sortable="'service_id'">
+            {{ Srv.service_id }}
+          </td>
+          <td title="'Mongo ID'" filter="{ _id: 'text'}" sortable="'_id'">
+            {{ Srv._id }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <a id="modal-104113" href="#modal-container-104113" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+
+    <div class="modal fade" id="modal-container-104113" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel">
+              Modal title
+            </h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">
+              Save changes
+            </button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

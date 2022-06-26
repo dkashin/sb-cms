@@ -1,0 +1,50 @@
+syntax = "proto3";
+package stabox;
+
+import "google/api/annotations.proto";
+
+message Colo {
+    string _id = 1;
+    uint32 colo_id = 2;
+    string name = 3;
+    string title = 4;
+    oneof enabled_ { bool enabled = 5; }
+    oneof public_ { bool public = 6; }
+}
+
+message Service {
+    string _id = 1;
+    uint32 service_id = 2;
+    uint32 priority = 3;
+    string address = 4;
+    string colo_name = 5;
+    string handler = 6;
+    string comment = 7;
+    oneof enabled_ { bool enabled = 8; }
+}
+
+message Nothing {}
+
+message GetColosRep {
+    repeated Colo items = 1;
+    uint32 total = 2;
+}
+
+message GetServicesRep {
+    repeated Service items = 1;
+    uint32 total = 2;
+}
+
+service Services {
+    rpc getColos(Nothing) returns (GetColosRep) {
+        option (google.api.http) = {
+            get: "/colos"
+        };
+    }
+    rpc GetColo(Colo) returns (Colo) {}
+    rpc getServices(Nothing) returns (GetServicesRep) {
+        option (google.api.http) = {
+            get: "/services"
+        };
+    }
+}

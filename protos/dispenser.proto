@@ -1,0 +1,91 @@
+syntax = "proto3";
+package stabox;
+
+import "google/api/annotations.proto";
+import "nimble.proto";
+
+message StreamUrlReq {
+    uint32 login = 1;
+    string session_id = 2;
+    string ip_address = 3;
+    string user_agent = 4;
+    uint32 content_id = 5;
+    uint32 time_start = 6;
+    string platform = 7;
+    bool force_hls = 8;
+}
+
+message GetStreamUrlRep {
+    string stream_url = 1;
+}
+
+message FlussonicReportReq {
+    string token = 1;
+    string name = 2;
+    string ip = 3;
+    string type = 4;
+    string request_type = 5;
+    uint32 duration = 6;
+    uint32 stream_clients = 7;
+    uint32 total_clients = 8;
+    string session_id = 9;
+    string country = 10;
+    string user_name = 11;
+    uint32 port = 12;
+    string qs = 13;
+    string host = 14;
+    string user_agent = 15;
+    string media_request = 16;
+    bool dryrun = 17;
+    string vhost = 18;
+}
+
+message FlussonicReportRep {}
+
+message ColoAbuseRep {
+    string do = 1;
+}
+
+service Dispenser {
+    rpc getChannelStreamUrl(StreamUrlReq) returns (GetStreamUrlRep) {
+        option (google.api.http) = {
+            post: "/channels/{content_id}/requests",
+            body: "*"
+        };
+    }
+    rpc getMovieUrl(StreamUrlReq) returns (GetStreamUrlRep) {
+        option (google.api.http) = {
+            post: "/movies/{content_id}/url",
+            body: "*"
+        };
+    }
+    rpc getMovieFileUrl(StreamUrlReq) returns (GetStreamUrlRep) {
+        option (google.api.http) = {
+            post: "/movies/files/{content_id}/url",
+            body: "*"
+        };
+    }
+    rpc getProgramStreamUrl(StreamUrlReq) returns (GetStreamUrlRep) {
+        option (google.api.http) = {
+            post: "/programs/{content_id}/requests",
+            body: "*"
+        };
+    }
+    rpc storeNimbleReport(NimbleReportReq) returns (NimbleReportRep) {
+        option (google.api.http) = {
+            post: "/streamers/{vhost}/report",
+            body: "*"
+        };
+    }
+    rpc storeFlussonicReport(FlussonicReportReq) returns (FlussonicReportRep) {
+        option (google.api.http) = {
+            get: "/streamers/{vhost}/check"
+        };
+    }
+    rpc reportColoAbuse(GetStreamUrlRep) returns (ColoAbuseRep) {
+        option (google.api.http) = {
+            post: "/colos/abuse",
+            body: "*"
+        };
+    }
+}

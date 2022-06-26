@@ -1,0 +1,196 @@
+version: "3.0"
+services:
+    redis:
+        image: redis:4-alpine
+        logging:
+            driver: "json-file"
+            options:
+                max-file: "3"
+                max-size: "100m"
+    WebApp:
+        image: ${DOCKER_REGISTRY}/webapp:test
+        build: ${WEB_APP_BASE}
+        restart: always
+        expose:
+            - ${LISTEN}
+        logging:
+            driver: "json-file"
+            options:
+                max-file: "3"
+                max-size: "100m"
+    Router:
+        image: ${DOCKER_REGISTRY}/router:test
+        build: ${BUILD_BASE}/router
+        restart: always
+        ports:
+            - ${ROUTER_BIND_GRPC}
+            - ${ROUTER_BIND_RESTAPI}
+            - ${ROUTER_BIND_WEB_APP}
+        depends_on:
+            - Accounts
+            - Channels
+            - Dispenser
+            - GeoResolver
+            - RestApi
+            - Services
+        logging:
+            driver: "json-file"
+            options:
+                max-file: "3"
+                max-size: "100m"
+    RestApi:
+        image: ${DOCKER_REGISTRY}/restapi:test
+        build: ${BUILD_BASE}/restapi
+        restart: always
+        expose:
+            - ${LISTEN}
+        environment:
+            - LISTEN
+            - ROUTER_ADDRESS
+        depends_on:
+            - Accounts
+            - Dispenser
+            - GeoResolver
+        logging:
+            driver: "json-file"
+            options:
+                max-file: "3"
+                max-size: "100m"
+    Accounts:
+        image: ${DOCKER_REGISTRY}/accounts:test
+        build: ${BUILD_BASE}/accounts
+        restart: always
+        expose:
+            - ${LISTEN}
+        environment:
+            - LISTEN
+            - WORKERS
+            - LOGLEVEL
+            - ROUTER_ADDRESS
+            - MONGO_HOSTNAME
+            - MONGO_DATABASE
+            - MYSQL_HOSTNAME
+            - MYSQL_USERNAME
+            - MYSQL_PASSWORD
+            - MYSQL_DATABASE
+        logging:
+            driver: "json-file"
+            options:
+                max-file: "3"
+                max-size: "100m"
+    Channels:
+        image: ${DOCKER_REGISTRY}/channels:test
+        build: ${BUILD_BASE}/channels
+        restart: always
+        expose:
+            - ${LISTEN}
+        environment:
+            - LISTEN
+            - WORKERS
+            - LOGLEVEL
+            - ROUTER_ADDRESS
+            - MYSQL_HOSTNAME
+            - MYSQL_USERNAME
+            - MYSQL_PASSWORD
+            - MYSQL_DATABASE
+        logging:
+            driver: "json-file"
+            options:
+                max-file: "3"
+                max-size: "100m"
+    Movies:
+        image: ${DOCKER_REGISTRY}/movies:test
+        build: ${BUILD_BASE}/movies
+        restart: always
+        expose:
+            - ${LISTEN}
+        environment:
+            - LISTEN
+            - WORKERS
+            - LOGLEVEL
+            - MYSQL_HOSTNAME
+            - MYSQL_USERNAME
+            - MYSQL_PASSWORD
+            - MYSQL_DATABASE
+        logging:
+            driver: "json-file"
+            options:
+                max-file: "3"
+                max-size: "100m"
+    Dispenser:
+        image: ${DOCKER_REGISTRY}/dispenser:test
+        build: ${BUILD_BASE}/dispenser
+        restart: always
+        expose:
+            - ${LISTEN}
+        environment:
+            - LISTEN
+            - WORKERS
+            - LOGLEVEL
+            - ROUTER_ADDRESS
+            - REDIS_URL
+            - RQ_REDIS_URL
+            - MONGO_HOSTNAME
+            - MONGO_DATABASE
+            - CDNVIDEO_KEY
+            - CDNGCL_KEY
+            - NIMBLE_KEY
+            - NGENIX_KEY
+            # - AUTH_FEEDBACK=true
+        depends_on:
+            - redis
+        logging:
+            driver: "json-file"
+            options:
+                max-file: "3"
+                max-size: "100m"
+    AccessResolver:
+        image: ${DOCKER_REGISTRY}/accessresolver:test
+        build:
+            context: ${BUILD_BASE}/dispenser
+            dockerfile: Dockerfile-accessresolver
+        environment:
+            - REDIS_URL
+            - RQ_REDIS_URL
+            - MONGO_HOSTNAME
+            - MONGO_DATABASE
+        depends_on:
+            - redis
+        logging:
+            driver: "json-file"
+            options:
+                max-file: "3"
+                max-size: "100m"
+    GeoResolver:
+        image: ${DOCKER_REGISTRY}/georesolver:test
+        build: ${BUILD_BASE}/georesolver
+        restart: always
+        expose:
+            - ${LISTEN}
+        environment:
+            - LISTEN
+            - WORKERS
+            - LOGLEVEL
+        logging:
+            driver: "json-file"
+            options:
+                max-file: "3"
+                max-size: "100m"
+    Services:
+        image: ${DOCKER_REGISTRY}/services:test
+        build: ${BUILD_BASE}/services
+        restart: always
+        expose:
+            - ${LISTEN}
+        environment:
+            - LISTEN
+            - WORKERS
+            - LOGLEVEL
+            - ROUTER_ADDRESS
+            - MONGO_HOSTNAME
+            - MONGO_DATABASE
+        logging:
+            driver: "json-file"
+            options:
+                max-file: "3"
+                max-size: "100m"
